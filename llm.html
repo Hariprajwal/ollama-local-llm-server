@@ -397,7 +397,7 @@
                 if (questionMatch) {
                     newTitle = questionMatch[0];
                 } else {
-                    newTitle = message.substring(0, 50) + (message.length > 50 ? '...' : '');
+                    newTitle = message.substring(0, 15) + (message.length > 15 ? '...' : '');
                 }
             } 
             // If message mentions specific technologies or topics
@@ -424,12 +424,12 @@
                 
                 // Fallback if no key terms were found
                 if (keyTerms.length === 0) {
-                    newTitle = message.substring(0, 50) + (message.length > 50 ? '...' : '');
+                    newTitle = message.substring(0, 15) + (message.length > 15 ? '...' : '');
                 }
             } 
             // Default: use first 50 characters of the message
             else {
-                newTitle = message.substring(0, 50) + (message.length > 50 ? '...' : '');
+                newTitle = message.substring(0, 15) + (message.length > 15? '...' : '');
             }
             
             // Update the chat title
