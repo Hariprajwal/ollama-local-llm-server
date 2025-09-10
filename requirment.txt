@@ -4,5 +4,6 @@ ws==8.13.0
 
 # System requirement
 ollama
+codelama:7b
 nodejs
 npm
