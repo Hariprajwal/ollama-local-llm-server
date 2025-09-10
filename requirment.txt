@@ -7,3 +7,4 @@ ollama
 codelama:7b
 nodejs
 npm
+web sockets 
